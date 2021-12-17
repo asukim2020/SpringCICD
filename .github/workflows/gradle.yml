@@ -51,6 +51,6 @@ jobs:
     - name: Code Deploy #4
       run: aws deploy create-deployment --application-name SpringCICD-Application
         --deployment-config-name CodeDeployDefault.OneAtATime
-        --deployment-group-name SpringCICD-Distribute
+        --deployment-group-name SpringCICD-Distribution
         --s3-location bucket=cicdtest001,bundleType=zip,key=$GITHUB_SHA.zip
         --region ap-northeast-2
