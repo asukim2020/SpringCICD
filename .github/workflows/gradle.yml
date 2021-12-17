@@ -52,4 +52,4 @@ jobs:
       run: aws deploy create-deployment --application-name SpringCICD
         --deployment-config-name CodeDeployDefault.OneAtATime
         --deployment-group-name CI_CD
-        --s3-location bucket=CICD,bundleType=zip,key=$GITHUB_SHA.zip
+        --s3-location bucket=cicdtest001,bundleType=zip,key=$GITHUB_SHA.zip
