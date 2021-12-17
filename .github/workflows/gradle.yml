@@ -49,8 +49,8 @@ jobs:
       run: aws s3 cp --region ap-northeast-2 ./$GITHUB_SHA.zip s3://cicdtest001/$GITHUB_SHA.zip
 
     - name: Code Deploy #4
-      run: aws deploy create-deployment --application-name SpringCICD
+      run: aws deploy create-deployment --application-name SpringCICD-Application
         --deployment-config-name CodeDeployDefault.OneAtATime
-        --deployment-group-name CI_CD
+        --deployment-group-name SpringCICD-Distribute
         --s3-location bucket=cicdtest001,bundleType=zip,key=$GITHUB_SHA.zip
         --region ap-northeast-2
