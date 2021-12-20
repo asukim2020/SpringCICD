@@ -13,7 +13,7 @@ then
 else
   echo "> kill -15 $CURRENT_PID"
   sudo kill -15 $CURRENT_PID
-  sleep 10
+  sleep 5
 fi
 
 echo "> $JAR_PATH 배포"
