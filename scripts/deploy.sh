@@ -17,4 +17,4 @@ else
 fi
 
 echo "> $JAR_PATH 배포"
-nohup java -jar /home/ec2-user/app/SpringCICD/build/libs/SpringCICD-0.1.jar
+nohup java -jar $JAR_PATH 2>&1 &
